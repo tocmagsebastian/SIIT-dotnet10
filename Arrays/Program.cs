@@ -93,10 +93,38 @@
 
             intArray[5] = 10;
 
+            // declare and create matrix
 
+            int[] array = { 1, 2 };
+            array[0] = 1;
 
+            int[,] myMatrix = {
+                { 1, 2 },
+                { 2, 3 },
+            };
 
+            int[,] myMatrix2 = new int[2, 2];
+            myMatrix2[0, 0] = 1;
+            myMatrix2[0, 1] = 5;
 
+            // Printing a matrix
+            // Console.WriteLine(myMatrix); // this print System.Int32[,]
+
+            for (int row = 0; row < myMatrix.GetLength(0); row++)
+            {
+                for (int col = 0; col < myMatrix.GetLength(1); col++)
+                {
+                    Console.Write(myMatrix[row, col]);
+                    Console.Write(", ");
+                }
+
+                Console.WriteLine();
+            }
+
+            //Jagged arrays
+            int[][] jagged = new int[3][];
+
+           // { [1, 3, 5], [87, 4324, 33234], [32, 42, 42123]}
 
 
 

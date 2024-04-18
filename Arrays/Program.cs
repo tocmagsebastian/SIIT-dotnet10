@@ -122,12 +122,26 @@
             }
 
             //Jagged arrays
-            int[][] jagged = new int[3][];
+             int[][] jagged = new int[3][];
 
-           // { [1, 3, 5], [87, 4324, 33234], [32, 42, 42123]}
+            // { [1, 3, 5], [87, 4324, 33234], [32, 42, 42123]}
 
+            // Properties of Class Array
+            string[] capitals = { "Sofia", "Washington", "Londra", "Paris" };
 
+            Console.WriteLine($"Lungimea arrayului este: {capitals.Length}");
+            Console.WriteLine($"Lungimea de dimensiuni al arrayului este: {capitals.Rank}");
+            Console.WriteLine($"Lungimea de dimensiuni al arrayului este: {myMatrix2.Rank}");
 
+            Console.WriteLine($"Pozitia orasului Londra este {Array.IndexOf(capitals, "Londra")}");
+            Console.WriteLine($"La pozitia 2 se afla orasul {capitals[2]}.");
+
+            //array.Reverse()
+            var reversed = capitals.Reverse();
+            foreach(var city in capitals)
+            {
+                Console.WriteLine(city);
+            }
 
         }
     }

@@ -19,23 +19,27 @@ namespace Handout
             this.age = age;
         }
 
-
+        public Person() 
+        {
+            name = "Undefined";
+            age = "NotKnown";
+        }
 
         public string Name
         {
-            
+
             get
             {
                 return name;
             }
-            
+
             set
             {
                 name = value;
             }
         }
-        
-        public string Age 
+
+        public string Age
         {
             get { return age; }
             set { age = value; }
